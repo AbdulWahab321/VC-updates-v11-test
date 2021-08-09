@@ -423,7 +423,7 @@ def showInput():
                 cprint("You don't have any histories currently..", "green")
         elif platformPayload == "r-rvc":
             cprint("Executing virus-creator again...", "green")
-            os.system("virus-creator.exe")
+            os.system("start virus-creator.exe&&exit")
             sys.exit(0)
         elif platformPayload == "exit-vc" or platformPayload == "ec":
             cprint("Bye see you again......Have a nice day")
