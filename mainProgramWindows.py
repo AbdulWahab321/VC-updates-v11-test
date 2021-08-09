@@ -76,7 +76,7 @@ def createUpdater():
         open("NewOne.txt","w").write(codeNew)
         open("OldOne.txt","w").write(open("./mainProgramWindows.py").read())
         if refUpdate == True:
-            if codeNew.strip() != open(f"{currentDirectory}/mainProgramWindows.py").read().strip().replace("\n",""):
+            if codeNew.strip().replace("\n","") != open(f"{currentDirectory}/mainProgramWindows.py").read().strip().replace("\n",""):
                 cprint("Updates are available Installing updates.....", "cyan")
                 if os.path.exists("c:/Program Files/Virus-Creator-Py/components"):
                     open("./mainProgramWindows.py","w").write(codeNew.strip())
